@@ -1,0 +1,157 @@
+
+// escala de cores standard mode Wolverine GT
+// escala seguindo o rebrand feito da marca
+$laranja: #d35400;
+$amarelo-ouro: #f89406;
+$amarelo: #ffcb05;
+$preto: #080401;
+$cinza-mais-escuro: #1e232d;
+$cinza-escuro: #282d37;
+$cinza: #646e7d;
+$cinza-claro: #dadfe1;
+$cinza-smoke: #f2f2f3;
+$branco: white;
+
+// cores do tema
+$theme-colors:(
+    "amarelo":$amarelo,
+    "cinza":$cinza,
+    "cinza-escuro":$cinza-escuro,
+    "cinza-claro":$cinza-claro,
+    "cinza-smoke":$cinza-smoke,
+);
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif!important;
+}
+::selection{
+    background-color: $laranja;
+    color: $cinza-smoke
+}
+#section-list-team h1{
+    font-weight: 700;
+}
+#section-list-team p{
+    font-weight: 300;
+    word-wrap: break-word;
+    margin-bottom: 40px;
+}
+#section-list-team{
+    margin:30px auto;
+}
+
+
+/* LISTING TEAM */ 
+.list-team{
+    list-style: none;
+}
+
+.list-team > ul > li{
+    // border-right: 1px solid #cecdcb;
+    // border-bottom: 1px solid #cecdcb;
+    // border-top: 1px solid #fff;
+    // padding: 0;
+    vertical-align: top;
+}
+.list-team ul li{
+    display: inline-block;
+    margin: 5px 7px;
+    width: 170px; /* box size content team */ 
+}
+.content{
+    padding: 5px;
+}
+.pic-team{
+    display: inline-block;
+    width: 150px; /* circle size of picture */
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    // background-color: $cinza;
+    border-radius: 50%;
+}
+.pic-team img{
+    display: inline;
+    vertical-align: middle;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+
+
+/* FONT SPEC LIST TEAM*/ 
+.item-team > .content p, .item-team > .content h5 {
+    text-transform: capitalize;
+}
+.item-team > .content p{
+    font-weight: 300;
+    font-size: 12px;
+    color: $cinza;
+}
+.item-team > .content h5{
+    font-weight: 700;
+    font-size: 16px;
+    color: $cinza-escuro;
+}
+
+
+
+
+/* DETAIL LIST */
+.row-detail{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.detail-description{
+    padding:20px
+}
+.item-detail{
+    padding:20px;
+}
+.pic-detail{
+    display: inline-block;
+    width: 250px; /* circle size of picture */
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    // background-color: $cinza;
+    border-radius: 50%;
+}
+.pic-detail img{
+    display: inline;
+    vertical-align: middle;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+
+.row-detail a{
+    color: $laranja;
+}
+
+
+/* FONT SPEC DETAIL */ 
+.item-detail > .content p, .item-detail > .content h5 {
+    text-transform: capitalize;
+}
+.item-detail > .content h3{
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top:20px
+}
+.item-detail > .content h5{
+    font-weight: 700;
+    font-size: 16px;
+    color: $cinza-escuro;
+}
+.detail-description > h1{
+    font-weight: 700;
+}
+
+
+
+
+// importando o bootstrap
+@import "node_modules/bootstrap/scss/bootstrap";
